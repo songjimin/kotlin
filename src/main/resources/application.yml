@@ -1,0 +1,13 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/superset
+    username: superset
+    password: superset
+    driver-class-name: org.postgresql.Driver
