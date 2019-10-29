@@ -1,4 +1,7 @@
 package com.kotlin.prototype.repository
 
-interface DailyGameServerRepository {
+import com.kotlin.prototype.model.DailyGameServer
+import org.springframework.data.repository.CrudRepository
+
+interface DailyGameServerRepository : CrudRepository<DailyGameServer, Int>{
 }

@@ -6,9 +6,6 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import kotlin.streams.asSequence
 
 @SpringBootTest
 class PrototypeApplicationTests {
@@ -16,6 +13,7 @@ class PrototypeApplicationTests {
 
     @Autowired
     lateinit var studentRepository: StudentRepository
+
 
     @Test
     fun contextLoads() {
@@ -43,14 +41,7 @@ class PrototypeApplicationTests {
         }
     }
 
-    @Test
-    fun insertDailyGameServer() {
-
-        val dateFormat = DateTimeFormatter.ISO_LOCAL_DATE_TIME
-        var now = LocalDateTime.now()
-
-        now.minusHours(1).format(dateFormat)
 
 
-    }
+
 }

@@ -1,6 +1,6 @@
 package com.kotlin.prototype.model
 
-import java.time.LocalDate
+import java.time.LocalDateTime
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
@@ -12,4 +12,4 @@ data class DailyGameServer(@Id @GeneratedValue(strategy = GenerationType.AUTO)
                       var game: String,
                       var gameServer: String,
                       var userCount: Int,
-                      var date: LocalDate)
+                      var date: LocalDateTime)
